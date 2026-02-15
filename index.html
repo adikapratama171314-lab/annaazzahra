@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Magic for Anna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="bg"></div>
+
+    <div id="page1" class="page active">
+        <div class="profile-container" onclick="goToPage(2)">
+            <img src="https://img.sanishtech.com/u/b217baa7321e8d43b36f85ab595e621b.jpg" class="img-circle" alt="Anna">
+            <div class="open-badge">BUKA 💌</div>
+        </div>
+        <h1 class="font-dance">HBD</h1>
+        <p class="hint">Ketuk fotonya ya naa</p>
+    </div>
+
+    <div id="page2" class="page">
+        <h2 class="instr-text">SENTUH EMOJI EMOJI NYA YAA!</h2>
+        <div class="emoji-wrapper">
+            <span onclick="showPop(1)" class="emoji" style="top: 30%; left: 15%;">🌹</span>
+            <span onclick="showPop(2)" class="emoji" style="top: 50%; right: 10%;">✨</span>
+            <span onclick="showPop(3)" class="emoji" style="bottom: 25%; left: 35%;">🌸</span>
+            
+            <img id="pop1" src="https://img.sanishtech.com/u/500b235bb8c9dbde0ebeab58171076f6.jpg" class="pop-photo" style="top: 0; left: 0;">
+            <img id="pop2" src="https://img.sanishtech.com/u/0e0759c75cce349b117c3fe259eb0734.jpg" class="pop-photo" style="top: 60%; right: 0;">
+            <img id="pop3" src="https://img.sanishtech.com/u/83ad7f15ee9c651f75ff2a0e3909c643.jpg" class="pop-photo" style="bottom: 0; left: 30%;">
+        </div>
+        <button class="btn" onclick="goToPage(3)">Kalau udah klik ini</button>
+    </div>
+
+    <div id="page3" class="page">
+        <h1 class="font-dance">To Anna</h1>
+        <div class="neon-frame">
+            <img src="https://img.sanishtech.com/u/81408c1551525411bc87be97cfe5e9d2.jpg" alt="Anna Portrait">
+        </div>
+        <p class="quote">"HAPPY Birthday Anna Azzahra."</p>
+        <button class="btn" onclick="goToPage(4)">LANJUT YAA→</button>
+    </div>
+
+    <div id="page4" class="page">
+        <div class="message-card">
+            <h1 class="card-title">Happy Birthday ANNA AZZAHRA!</h1>
+            <p id="typewriter"></p>
+        </div>
+        <button class="btn" onclick="location.reload()">Ulangi</button>
+    </div>
+
+    <audio id="music" loop>
+        <source src="https://image2url.com/r2/default/audio/1771103988924-918c0be3-1840-48af-addf-76ef9fdcf840.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
